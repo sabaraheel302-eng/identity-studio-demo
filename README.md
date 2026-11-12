@@ -2,6 +2,8 @@
 
 A fictional, responsive digital identity onboarding demonstration inspired by the visual structure of supplied mobile references. Original branding, forest green and mint styling, English and Arabic journey screens, and sample data throughout.
 
+Live demo: https://sabaraheel302-eng.github.io/identity-studio-demo/
+
 This is **not UAE PASS** and is not associated with a government, identity provider, or bank. It does not implement real identity verification or authentication.
 
 ## Run
