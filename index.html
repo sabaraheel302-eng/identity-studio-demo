@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123e34">
+  <meta name="description" content="Identity Studio — a fictional, interactive digital identity onboarding demonstration. Uses sample data only.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; form-action 'none'; object-src 'none'; base-uri 'none'">
+  <title>Identity Studio · Interactive demo</title>
+  <link rel="icon" href="./mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <div class="demo-bar"><span class="demo-dot"></span><span id="demo-notice">FICTIONAL DEMO · SAMPLE DATA ONLY · NOT AFFILIATED WITH UAE PASS</span></div>
+  <header class="header">
+    <a class="brand" href="#welcome" aria-label="Identity Studio home"><img src="./mark.svg" alt="" width="36" height="36"><span>identity<span class="brand-light">studio</span><small>THE ONBOARDING PLAYGROUND</small></span></a>
+    <nav aria-label="Main navigation"><button class="text-button" id="about-button">About this demo <span aria-hidden="true">↗</span></button><button class="language" id="language-button" lang="ar">العربية</button></nav>
+  </header>
+  <main class="workspace">
+    <section class="introduction">
+      <div class="eyebrow"><span class="small-line"></span><span id="eyebrow">A LITTLE LESS FRICTION</span></div>
+      <h1 id="hero-title">Your identity.<br>A simpler <em>journey.</em></h1>
+      <p class="hero-copy" id="hero-copy">Explore a thoughtfully designed onboarding experience. One clear step at a time, from hello to all set.</p>
+      <div class="identity-art" aria-hidden="true">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <span class="floating-token token-check">✓</span><span class="floating-token token-star">✧</span>
+        <div class="sample-card"><div class="card-top"><span class="mini-mark">i.</span><span>STUDIO / SAMPLE ID</span><span class="card-dots">•••</span></div><div class="card-person"><div class="avatar"><svg viewBox="0 0 80 80"><circle cx="40" cy="29" r="14"/><path d="M13 75c0-32 54-32 54 0"/></svg></div><div><small>DEMO MEMBER</small><strong>Alex Morgan</strong><span>Sample profile · 0001</span></div></div><div class="card-bottom"><span>DESIGNED FOR EXPLORATION</span><span>✦</span></div></div>
+        <div class="verified-chip"><span>✓</span> A smooth start.</div>
+      </div>
+      <div class="intro-footer"><span class="footer-symbol">◈</span><p id="intro-footer">A design prototype, built for a closer look.<br>No real accounts. No personal data collected.</p></div>
+    </section>
+    <section class="journey" aria-label="Interactive onboarding demo">
+      <div class="journey-top"><span id="journey-label">TRY THE EXPERIENCE</span><span class="live-badge"><span></span><span id="live-label">Interactive demo</span></span></div>
+      <ol class="progress" id="progress" aria-label="Journey progress"></ol>
+      <div id="screen" tabindex="-1" aria-live="polite"></div>
+      <div class="journey-bottom"><span aria-hidden="true">⌁</span><span id="privacy-line">Everything here is simulated. Nothing is uploaded.</span></div>
+    </section>
+  </main>
+  <footer class="site-footer"><span>© 2026 Identity Studio. A fictional design concept.</span><button class="text-button" id="privacy-button">Privacy & demo details</button><span class="footer-note">A considered first impression. <span aria-hidden="true">✦</span></span></footer>
+  <dialog id="about-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Close dialog">×</button><span class="eyebrow">MADE TO EXPLORE</span><h2 id="dialog-title">A prototype with clear boundaries.</h2><p>This is a fictional user experience demonstration. It is not UAE PASS, a government service, a bank, or an identity verification provider.</p><p>All names, contact details, documents, and verification results are samples. No passwords, payment details, OTPs, identity documents, camera access, or personal information are requested.</p><p>The demo has no backend, analytics, or data submission. Progress lives in this browser tab and resets when the page reloads.</p><button class="primary dialog-close-action">Got it</button></dialog>
+</body>
+</html>
